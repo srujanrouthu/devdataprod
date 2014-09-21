@@ -1,3 +1,6 @@
+library(shiny)
+p(em("Github repository documentation:",a("Github repo",href="https://github.com/srujanrouthu/devdataprod")))
+
 shinyUI(
   pageWithSidebar(
     headerPanel("Vehice Mileage Prediction"),
@@ -10,7 +13,7 @@ shinyUI(
       submitButton('Calculate Mileage')
       ),
     
-    mainPanel(
+    mainPanel(      
       h3('Prediction of mileage'),
       h4('You entered the weight as'),
       verbatimTextOutput("inputValue1"),
